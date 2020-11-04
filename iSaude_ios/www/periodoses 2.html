@@ -1,0 +1,62 @@
+<div class="pages">
+ <div data-page="settings" class="page navbar-fixed" style="overflow-x: auto;">
+      <div class="navbar">
+         <div class="navbar-inner">
+            <div class="left"><a href="#" class="back link"> <i class="icon icon-back"></i></a></div>
+            <div class="center fg-white nv-contact-list">Sessões</div>
+            <div class="right">
+               <!-- Right link contains only icon - additional "icon-only" class-->
+               <a href="#" class="link icon-only open-panel"> <i class="icon icon-bars"></i></a>
+            </div>
+         </div>
+      </div>
+       <div class="page-content" style="margin-top: 20px" >
+       <div id="sessoesPer">
+      
+        <div class="list-block no-border" >
+        <div class="content-block">
+          <form id="periodoses">
+            <ul>
+               <li>
+                 <label style="padding-left: 10px; text-align: center;color: green">Selecione o Paciente:</label>
+                  <div class="item-content">
+                     <div class="item-inner">                        
+                          <div id="pacsessao"></div>
+                        
+                     </div>
+                  </div>
+               </li>
+
+             <li>
+              <label style="padding-left: 10px; text-align: center;color: green">Selecione o Período:</label>
+                  <div class="item-content">
+                     <div class="item-inner">
+                        <div class="item-title label">Data inicial:</div>
+                        <div class="item-input">
+                           <input type="date" placeholder="Data inicial" id="datainicial">
+                        </div>
+                     </div>
+                  </div>
+               </li>
+               <li>
+                  <div class="item-content">
+                     <div class="item-inner">
+                        <div class="item-title label">Data final:</div>
+                        <div class="item-input">
+                           <input type="date" placeholder="Data final" id="datafinal">
+                        </div>
+                     </div>
+                  </div>
+               </li>
+               <li>
+                 <input type="submit" class="button button-fill color-green  margin-top-20" style="width: 100%;margin-bottom: 15px" value="Enviar">
+              </li>
+            </ul>
+
+          </form>
+        </div>
+        </div>
+        </div>
+        </div>
+     </div>
+  </div>

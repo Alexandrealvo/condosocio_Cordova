@@ -1,0 +1,184 @@
+<div class="pages">
+   <div data-page="Profile" class="page toolbar-fixed navbar-fixed">
+
+      <div class="navbar navbar-no-color">
+         <div class="navbar-inner">
+            <div class="left"><a href="#" class="back link"> <i class="icon icon-back"></i></a></div>
+            <div class="center fg-white nv-profile">Paciente</div>
+            <div class="right">
+               <!-- Right link contains only icon - additional "icon-only" class-->
+			   <a href="#" class="link icon-only open-panel"> <i class="icon icon-bars"></i></a>
+            </div>
+         </div>
+      </div>
+ <!-- Floating Action Button 
+      <a href="#" data-picker=".comment-form" class="floating-button link open-picker">
+      <i class="icon icon-plus"></i>
+      </a>-->
+      <div class="page-content hide-navbar-on-scroll about">
+         <div class="about-bg margin-bottom-15"></div>
+         <p class="text-center"><div id="nomepac"></div></p>
+          <p class="text-center"><div id="end"></div></p>
+       
+            <div class="row margin-top-10 margin-bottom-15">
+            
+            <div class="col-50 item-wrap text-center">
+               <div class="item-count"><div id="diagnostico"></div></div>
+               <div class="item-label text-uppercase text-thiny">Diagnóstico</div>
+            </div>
+            <div class="col-50 item-wrap text-center">
+               <div class="item-count"><div id="status"></div></div>
+               <div class="item-label text-uppercase text-thiny">Status</div>
+            </div>
+           
+            
+         </div> 
+         
+         <div class="row margin-top-10 margin-bottom-15">
+            
+            <div class="col-33 item-wrap text-center">
+               <div class="item-count"><div id="idade"></div></div>
+               <div class="item-label text-uppercase text-thiny">Idade</div>
+            </div>
+            <div class="col-33 item-wrap text-center">
+               <div class="item-count"><div id="convenio"></div></div>
+               <div class="item-label text-uppercase text-thiny">Convênio</div>
+            </div>
+            <div class="col-33 item-wrap text-center">
+               <div class="item-count"><div id="reg"></div></div>
+               <div class="item-label text-uppercase text-thiny">Registro</div>
+            </div>
+            
+         </div>
+       
+          
+
+              <div id="tel"></div>
+              <div id="cel"></div>
+               <div id="btnaceiteagenda"></div>
+              
+      <!-- COMMENT FORM -->
+      <div class="picker-modal comment-form">
+
+         <div class="toolbar" style="background-color: green">
+            <div class="toolbar-inner">
+               <div class="left">Agende suas visitas</div>
+               <div class="right"><a href="#" class="link close-picker"><img src="css/img/menu_close.png" width="32px" /></a></div>
+            </div>
+         </div>
+         <div class="picker-modal-inner">
+            <div class="content-block">
+               <div class="list-block inputs-list" style="margin:10px 0">
+          
+            <form id="incluirsecoes" >
+                  <ul>
+                     <li>
+                        <div class="item-content">
+                            <div class="item-inner">
+                                    <div class="item-title"><h2>Período<h2></div>
+                                    <div class="inputbox">
+                                          <label> <span></span></label>
+                                          <select id="periodo">
+                                          <option selected="" disabled="" value="0">Selecione</option>
+                                       
+                                             <option value="1">  1 semana</option>
+                                             <option value="4">  4 semanas</option>
+                                             <option value="12">12 semanas</option>
+                                             
+                                            
+                                          </select>
+                                       </div>
+                              </div>
+                               <div style="color:red" id="periodonot"></div>
+                        </div>
+                     </li>
+                         <li>
+                            <div class="item-content">
+                               <div class="item-inner">
+                              <div class="item-title"><h2>Dias de atendimento</h2></div>
+                           <label class="dataisaude"><input type="checkbox" name="dias[]" id="dias" value="1" />Segunda</label>
+                           <label class="dataisaude"><input type="checkbox" name="dias[]" id="dias" value="2" />Terça</label>
+                           <label class="dataisaude"><input type="checkbox" name="dias[]" id="dias" value="3" />Quarta</label>
+                           <label class="dataisaude"><input type="checkbox" name="dias[]" id="dias" value="4" />Quinta</label>
+                           <label class="dataisaude"><input type="checkbox" name="dias[]" id="dias" value="5" />Sexta</label>
+                           <label class="dataisaude"><input type="checkbox" name="dias[]" id="dias" value="6" />Sábado</label>
+                           <label class="dataisaude"><input type="checkbox" name="dias[]" id="dias" value="0" />Domingo</label>
+                           </div></div>
+                         </li> 
+                                    
+                        <div id="hiddenidter"></div> 
+                        <div id="hiddenidprof"></div> 
+                        
+                     <li>
+                        <div class="item-content">
+                           <div class="item-inner">
+                 <input type="submit" id="submit_" class="button button-fill color-green margin-top-10" value="Adicionar">
+                           </div>
+                        </div>
+                     </li>
+                  </ul>
+      </form>
+               </div>
+            </div>
+         </div>
+      </div>
+       <!-- COMMENT FORM -->
+      <div class="picker-modal status" style="height: 100%">
+         <div class="toolbar" style="background-color: green">
+            <div class="toolbar-inner">
+               <div class="left" style="padding-left: 5px">Informe o Status do Paciente</div>
+               <div class="right"><a href="#" class="link close-picker"><img src="css/img/menu_close.png" width="32px" /></a></div>
+            </div>
+         </div>
+         <div class="picker-modal-inner">
+            <div class="content-block">
+               <div class="list-block inputs-list" style="margin:10px 0">
+          
+            <form id="status_pac"  >
+                  <ul>
+                     <li>
+                        <div class="item-content">
+                            <div class="item-inner">
+                                    <div class="item-title margin-top-20""><h2>Status<h2></div>
+                                     <div class="inputbox ">
+                                          <label> <span> <div id="info"></div></span></label>
+                                          <div id="info_status"></div>
+                                          <div id="semstatus"></div>
+                                       </div>
+                                        <div class="inputbox">                                       
+                                           <textarea rows="4" cols="50" id="obs_status" placeholder="Observação"></textarea>
+                                       </div >
+
+                              </div>
+                             
+                        </div>
+                     </li>
+                         
+                        
+                        <div id="hiddenidprof2"></div>  
+                     
+                     <li>
+                        <div class="item-content">
+                           <div class="item-inner">
+                 <input type="submit" id="submit" class="carregar button button-fill color-green margin-top-10" value="Informar">
+
+                           </div>
+                           
+                        </div>
+                        <div class="margin-top-10">
+                           <label> <span>* A sua informação será enviada para a administração da iSaúde, que avaliará e poderá realizar a alteração do status do paciente.</span></label> 
+
+                           </div>
+                     </li>
+                  </ul>
+      </form>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- /COMMENT FORM -->    
+      <!-- /COMMENT FORM -->    
+      </div>
+
+   </div>
+</div>

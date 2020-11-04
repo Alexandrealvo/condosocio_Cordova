@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt" >
+   <head>
+      <!-- Required meta tags-->
+      <meta charset="utf-8">
+      <meta http-equiv="Content-Language" content="pt-br">
+     <meta name="viewport" content="initial-scale=1, width=device-width, height=device-height, viewport-fit=cover">
+         <meta name="apple-mobile-web-app-capable" content="yes">
+      <link rel="apple-touch-icon" href="http://placehold.it/80x80/?text=ICON" />
+      <meta name="mobile-web-app-capable" content="yes">
+      <link rel="shortcut icon" sizes="196x196" href="http://placehold.it/196x196/?text=ICON">
+      <link rel="shortcut icon" sizes="128x128" href="http://placehold.it/128x128/?text=ICON">
+      <!-- Color theme for statusbar -->
+      <meta name="theme-color" content="#ffffff">
+      <!-- Your app title -->
+      <title>iSaude</title>
+      <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Playfair+Display:400,700" rel="stylesheet">
+      <!-- Path to Framework7 Library CSS, Material Theme -->
+      <link rel="stylesheet" href="css/framework7.material.min.css">
+      <link rel="stylesheet" href="css/framework7.3dpanels.min.css">
+      <link rel="stylesheet" href="css/framework7.indexed-list.min.css">
+      <!-- Path to Framework7 color related styles, Material Theme -->
+      <link rel="stylesheet" href="css/framework7.material.colors.min.css">
+      <link rel="stylesheet" href="css/efeito.css">
+       <link rel="stylesheet" href="css/progressbar.css">
+      <!-- Slick Carousel -->
+      <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+      <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+      <!-- UpScroller -->
+      <link rel="stylesheet" href="css/framework7.upscroller.min.css">
+      <!-- font-awesome.min CSS -->      
+      <link rel="stylesheet" href="css/font-awesome.min.css">
+      <link rel="stylesheet" href="css/font-awesome.css">
+      <!-- Path to your custom app styles-->
+      <link rel="stylesheet" href="font/flaticon.css">
+      <link rel="stylesheet" href="shop-cart/flaticon.css">
+      <link rel="stylesheet" href="css/base.css">
+      <link rel="stylesheet" href="css/my-app.css">
+     <link href='css/fullcalendar.min.css' rel='stylesheet' />
+<link href='css/fullcalendar.print.min.css' rel='stylesheet' media='print' />
+      
+   </head>
+   <body class="theme-black">
+      <!-- Status bar overlay for fullscreen mode-->
+      <div class="statusbar-overlay"></div>
+      <!-- Panels overlay-->
+      <div class="panel-overlay"></div>
+      <!-- Left panel with reveal effect-->
+      <div class="panel panel-left panel-reveal">
+         <div class="content-block">
+            <!-- Left panel Content -->
+            <div class="list-block media-list">
+               <ul class="no-border">
+                  <li>
+                     <div class="item-content">
+                        <div class="item-media">
+                           <div id="imgperfil"></div>
+
+                        </div>
+                        <div class="item-inner">
+                           <div class="item-title-row margin-top-5">
+                              <div class="item-title text-bold">
+
+                                 <div id="perfil"></div>
+                              </div>
+                           </div>
+                           <div class="item-subtitle">
+                              <div id="especialidade"></div>
+                           </div>
+                        </div>
+                     </div>
+                  </li>
+               </ul>
+            </div>
+            <div class="list-block list-menu">
+               <ul class="no-border">
+                  <li>
+                     <i class="fa fa-user-o"></i><a href="perfil.html"  onclick="Perfil()"  class="close-panel no-animation ">Perfil</a>
+                  </li>
+                  <li>
+                     <i class="fa fa-lock"></i><a href="senha.html" class="close-panel no-animation"> Senha</a>
+                  </li>
+                  <li>
+                     <i class="fa fa-medkit"></i><a href="terapias.html" onclick="Terapias()" class="close-panel no-animation ">Terapias</a>
+                  </li>
+                   <li>
+                     <i class="fa fa-calendar"></i><a href="agenda.html" onclick="Agenda()" class="close-panel no-animation">Agenda</a>
+                  </li>
+                  <li>
+                     <i class="fa fa-plus-square-o"></i><a href="periodoses.html" class="close-panel no-animation">Sessões</a>
+                  </li>
+                  <li>
+                     <i class="fa fa-envelope-o"></i><a href="comunicados.html"  onclick="Comunicados()"  class="close-panel no-animation ">Comunicados</a>
+                  </li>
+                  <li>
+                     <i class="fa fa-question-circle-o"></i><a href="https://api.whatsapp.com/send?phone=5591981220670" target="_blank"" class="close-panel no-animation external">Ajuda</a>
+                  </li>
+                  
+                 <li>
+                     <i class="fa fa-sign-out"></i> <a href="#" onclick="Sair()" >Sair</a>
+                  </li>
+
+                 <!--
+                     <li>
+                     <i class="flaticon-paper"></i>  
+                     <div class="item-has-badge"><a href="features-list.html"  class="close-panel no-animation">All Features</a></div>
+                     <span class="badge bg-teal">17</span>
+                  </li>
+                  <li>
+                     <i class="flaticon-placeholder"></i>  <a href="mapa.html" class="close-panel no-animation">Mapa</a>
+                  </li>
+                  
+                 
+                 <li>
+                     <i class="flaticon-placeholder"></i>  <a href="mapa.html" class="close-panel valmap no-animation" >Mapa</a>
+                  </li> -->
+                   
+
+                 <!-- <li>
+                     <i class="flaticon-stats"></i>  <a href="diet-chart.html" class="close-panel no-animation">Monthly Diet Stats</a>
+                  </li>
+                  <li>
+                     <i class="flaticon-shopping-cart"></i>  <a href="sample-shop-list.html" class="close-panel no-animation">Buy Products</a>
+                  </li>
+                  <li>
+                     <i class="flaticon-newspaper-3"></i>  
+                     <div class="item-has-badge"> <a href="health-news.html" class="close-panel no-animation">Health News</a></div>
+                     <span class="badge bg-deeporange">09</span>
+                  </li>
+                  <li>
+                     <i class="flaticon-photo-gallery-pixel"></i>  <a href="explore-gallery.html" class="close-panel no-animation">Explore Gallery</a>
+                  </li>
+                  <li>
+                     <i class="flaticon-panels-1"></i> <a href="#" class="open-panel" data-panel="right">Right Panel</a>
+                  </li>-->
+               </ul>
+            </div>
+         </div>
+      </div>
+     
+      <!-- /Right Panel -->
+      <!-- Views -->
+      <div class="views tabs" style="overflow: hidden">
+ 
+         <div class="view view-main">
+            <!-- Pages container, because we use fixed navbar and toolbar, it has additional appropriate classes-->
+            <div class="pages">
+               <!-- Page, "data-page" contains page name -->
+               <div data-page="index" class="page">
+                         
+                     <div class="toolbar " style="background-color: green;height: 60px">
+                        <div class="toolbar-inner">
+                           <a href="perfil.html" class="link text-center perfil_vis"><i class="fa fa-user-o fa-mx"><div class="bottom_menu">Perfil</div></i></a>
+                           <a href="comunicados.html" class="comunicados_vis link text-center "><i class="fa fa-envelope-o fa-mx "><div class="bottom_menu">Comunicados</div></i></a>
+                           <a href="terapias.html" class="terapias_vis link text-center"><i class="fa fa-medkit fa-mx "><div class="bottom_menu">Terapias</div></i></a>
+                           <a href="agenda.html" class="link text-center agenda_vis"><i class="fa fa-calendar-o fa-mx  "><div class="bottom_menu">Agenda</div></i></a>
+                         </div>
+                     </div>
+           
+         
+
+                 <div class="page-content starter-page">
+
+                     <div class="content-block">
+                        <div class="pull-left">
+                           <a href="#" class="link icon-only open-panel"><i class="fa fa-bars fa-2x color-green"></i></a>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="starter-content">
+                           <center><br>
+                                <img src="css/img/logo.png" alt=""  class="image"   width="160" >  <br>
+                              <h4 style="color:green">MOBILE<br>
+                              Saúde, Humanizaçäo e Tecnologia</h4>
+                           </center>
+                        </div>
+                       
+
+
+                       
+                     </div>
+ 
+                  </div>
+
+               </div>
+
+            </div>
+            
+         </div>
+
+      </div>
+
+   <script type="text/javascript" src="js/jquery.js"></script>
+      <script type="text/javascript" src="cordova.js"></script>  
+      <script type="text/javascript" src="js/framework7.min.js"></script>
+      <script type="text/javascript" src="js/framework7.3dpanels.min.js"></script>
+      <script type="text/javascript" src="js/framework7.indexed-list.min.js"></script>
+      <script type="text/javascript" src="js/slick.min.js"></script>      
+      <script type="text/javascript" src="js/Foto.js"></script> 
+      <script src='js/moment.min.js'></script>
+      <script src='js/fullcalendar.min.js'></script>
+      <script type="text/javascript" src="js/pt-br.js"></script>
+      <!-- Charts -->
+      <script type="text/javascript" src="js/chart.min.js"></script>
+      <script type="text/javascript" src="js/mapa_function.js"></script>
+      >
+      <script type="text/javascript" src="js/buscarpac.js"></script>
+      <script type="text/javascript" src="js/refreshProf.js"></script>
+      
+    <script type="text/javascript" src="js/jquery_easing.js"></script> <!-- also optional for animateTo. But much nicer -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <!-- WILLIAM - INICIO -->
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCPpmW92pcAGTbZjSJCBJ8EH3AyYfdCHJg&callback=initMap2">
+    </script>
+    <script type="text/javascript" src="js/markerAnimate.js"></script>   
+    <script type="text/javascript" src="js/mapa_function2.js"></script>
+    
+    <script type="text/javascript" src="js/my-app.js"></script>
+    <!-- WILLIAM - FIM -->
+      
+   </body>
+</html>

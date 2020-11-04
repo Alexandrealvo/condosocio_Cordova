@@ -1,0 +1,71 @@
+<div class="pages">
+   <div data-page="article" class="page navbar-fixed">
+      <div class="navbar">
+         <div class="navbar-inner">
+            <div class="left"><a href="#" class="back link"> <i class="icon icon-back"></i></a></div>
+            <div class="center nv-article-page fg-white">SMS</div>
+            <div class="right">
+               <!-- Right link contains only icon - additional "icon-only" class-->
+               <a href="#" class="link icon-only open-panel"> <i class="icon icon-bars"></i></a>
+            </div>
+         </div>
+      </div>
+      <!-- Floating Action Button -->
+      <a href="#" data-picker=".comment-form" class="floating-button link open-picker">
+      <i class="icon icon-plus"></i>
+      </a>
+      <!-- Toolbar has additional "toolbar-bottom" class -->
+      <div class="page-content">
+         <div class="article">
+            <div class="article-head">
+               <div class="pull-left text-thiny text-uppercase">
+                  <div class="article-author">
+                     <img class="article-author-img" src="http://placehold.it/80x80/?text=USER" alt="user">
+                     <p class="article-author-name">Peter Doe</p>
+                  </div>
+               </div>
+               <div class="pull-right text-thiny article-date">22 January 2017</div>
+               <div class="clearfix"></div>
+            </div>
+
+            <div class="article-content">
+            <div class="content-block">
+               <div class="list-block inputs-list">
+                  <ul>
+                     <li>
+                       <div class="item-content">
+                           <div class="item-inner">
+                              <div class="item-title label"></div>
+                              <div class="item-input item-input-field">
+                                  <input  id="sendto" placeholder="Entre com o celular..." value="" type="tel" />
+                              </div>
+                           </div>
+                        </div> 
+                     </li>
+                     <li> 
+                        <div class="item-content">
+                           <div class="item-inner">
+                              <div class="item-title label"></div>
+                              <div class="item-input item-input-field">
+                                 <textarea rows="5" cols="30" id="textmsg"  placeholder="Entre com a mensagem..."></textarea>
+                              </div>
+                           </div>
+                        </div>
+                     </li>
+                  </ul>
+                 
+            <div id='status'></div><hr/>
+            <div id='data' style='text-align:left;'></div>
+
+                   <input type="submit" class="button button-fill color-green" style="width: 100%;margin-bottom: 15px" onclick="sendSMS()" value="ENVIAR SMS">
+               </div>
+            </div>
+         </div>
+       </div>
+           
+   </div>
+
+      
+      <!-- /COMMENT FORM -->
+   </div>
+</div>

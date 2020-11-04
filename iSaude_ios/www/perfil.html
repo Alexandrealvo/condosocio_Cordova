@@ -1,0 +1,150 @@
+<div class="pages">
+<div data-page="settings" class="page navbar-fixed">
+   <div class="navbar">
+      <div class="navbar-inner">
+         <div class="left"><a href="" class="back link"> <i class="icon icon-back"></i></a></div>
+         <div class="center fg-white">Editar Perfil</div>
+         <div class="right">
+            <!-- Right link contains only icon - additional "icon-only" class-->
+            <a href="#" class="link icon-only open-panel"> <i class="icon icon-bars"></i></a>
+         </div>
+      </div>
+   </div>
+   <div class="page-content" id="car_perfil">
+      <div class="content-block">
+         <div class="list-block no-border">
+      <form id="editarperfil">
+            <ul>
+               <!-- Text inputs -->
+         <li>
+           
+             <div class="foto_perfil" style="cursor: pointer" align="center">
+              <img src="css/img/user.png" class="imgperfil" width="80" height="80">
+            </div>
+          </li>  
+               <li>
+                  <div class="item-content">
+                     <div class="item-inner">
+                        <div class="item-title label">Nome</div>
+                        <div class="item-input">
+                           <input type="text" id="nomeperfil" name="nome"  value="">
+                        </div>
+                     </div>
+                  </div>
+               </li>
+               <!-- Text inputs -->
+               <li>
+                  <div class="item-content">
+                     <div class="item-inner">
+                        <div class="item-title label">Sobrenome</div>
+                        <div class="item-input">
+                           <input type="text" id="sobreperfil" name="sobrenome"  value="">
+                        </div>
+                     </div>
+                  </div>
+               </li>
+               <!-- Text inputs -->
+               <li>
+                  <div class="item-content">
+                     <div class="item-inner">
+                        <div class="item-title label">Endereço</div>
+                        <div class="item-input">
+                           <input type="text" id="end" name="end"  value="">
+                        </div>
+                     </div>
+                  </div>
+               </li>
+               <li>
+                  <div class="item-content">
+                     <div class="item-inner">
+                        <div class="item-title label">Complemento</div>
+                        <div class="item-input">
+                           <input type="text" id="comp" name="comp"  value="">
+                        </div>
+                     </div>
+                  </div>
+               </li>
+               <li>
+                  <div class="item-content">
+                     <div class="item-inner">
+                        <div class="item-title label">Cidade</div>
+                        <div class="item-input">
+                           <input type="text" id="cidade" name="cidade"  value="">
+                        </div>
+                     </div>
+                  </div>
+               </li>
+               <li>
+                  <div class="item-content">
+                     <div class="item-inner">
+                        <div class="item-title label">Bairro</div>
+                        <div class="item-input">
+                           <input type="text" id="bairro" name="bairro"  value="">
+                        </div>
+                     </div>
+                  </div>
+               </li>
+               <li>
+                  <div class="item-content">
+                     <div class="item-inner">
+                        <div class="item-title label">CEP</div>
+                        <div class="item-input">
+                           <input type="text" id="cep" name="cep" onkeyup="mascara(this,mcep);"   maxlength="9"  value="">
+                        </div>
+                     </div>
+                  </div>
+               </li>
+               <li>
+                  <div class="item-content">
+                     <div class="item-inner">
+                        <div class="item-title label">UF</div>
+                        <div class="item-input">
+                           <input type="text" id="uf" name="uf"  value="">
+                        </div>
+                     </div>
+                  </div>
+               </li>
+
+             <li>
+                <div class="item-content">
+                     <div class="item-inner">
+                        <div class="item-title label">Telefone</div>
+                        <div class="item-input">
+                           <input type="tel" id="tel" name="tel"  onkeyup="mascara( this, mtel );" maxlength="14" value="">
+                        </div>
+                     </div>
+                  </div>
+               </li>
+               <li>
+                <div class="item-content">
+                     <div class="item-inner">
+                        <div class="item-title label">Celular</div>
+                        <div class="item-input">
+                           <input type="tel" id="cel" name="cel"  onkeyup="mascara( this, mtel );" maxlength="15" value="">
+                        </div>
+                     </div>
+                  </div>
+               </li>
+               <li>
+                <div class="item-content">
+                     <div class="item-inner">
+                        <div class="item-title label">Data Nascimento</div>
+                        <div class="item-input">
+                     <input type="date" id="dtnasc" name="dtnasc" maxlength="10" onkeypress="mascaraData( this, event )" value="">
+                        </div>
+                     </div>
+                  </div>
+               </li>
+               <br>
+              
+               <li>
+                 <input type="submit" class="button button-fill color-green" style="width: 100%;margin-bottom: 70px" value="Editar">
+              </li>
+			   <div class="margin-bottom-15 content-block">
+                 
+               </div>
+            </ul>
+         </div>
+      </div>
+   </div>
+</div>
